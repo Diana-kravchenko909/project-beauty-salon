@@ -12,47 +12,443 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
     <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Manrope:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
   </head>
 
   <body>
-    <header class="page-header">
-      <nav class="header-nav">
-        <a class="logo header-logo" href=""
-          >Web<span class="logo-part">Studio</span></a
-        >
+    <header class="header">
+      <div class="container header-container">
+        <a href="#" class="logo"> KotsuStudio </a>
 
-        <ul class="nav-list">
-          <li class="nav-item"><a class="nav-link" href="">ПРО МЕНЕ</a></li>
-          <li class="nav-item"><a class="nav-link" href="">ПОСЛУГИ</a></li>
-          <li class="nav-item"><a class="nav-link" href="">МОЇ РОБОТИ</a></li>
-          <li class="nav-item"><a class="nav-link" href="">ПРАЙС</a></li>
-          <li class="nav-item"><a class="nav-link" href="">КОНТАКТИ</a></li>
-        </ul>
-      </nav>
+        <nav class="navbar">
+          <a href="#about">Про мене</a>
+          <a href="#services">Послуги</a>
+          <a href="#portfolio">Мої роботи</a>
+          <a href="#pricing">Прайс</a>
+          <a href="#contacts">Контакти</a>
+        </nav>
 
-      <address class="contacts">
-        <ul class="contacts-list">
-          <li class="contacts-item">
-            <a class="contacts-link" href="mailto:.com">.com</a>
-          </li>
-          <li class="contacts-item">
-            <a class="contacts-link" href="tel:+">+</a>
-          </li>
-        </ul>
-      </address>
+        <a href="#contacts" class="btn"> Записатися </a>
+      </div>
     </header>
     <main>
-      <section></section>
+      <section class="hero">
+        <div class="container hero-content">
+          <div class="hero-text">
+            <span class="subtitle"> BEAUTY • CONFIDENCE • YOU </span>
+
+            <h1>Підкресліть свою природну красу</h1>
+
+            <p>
+              Професійні beauty-послуги, що допомагають виглядати доглянуто,
+              природно та впевнено.
+            </p>
+
+            <div class="hero-buttons">
+              <a href="#" class="btn"> Записатися </a>
+
+              <a href="#" class="btn-outline"> Послуги </a>
+            </div>
+          </div>
+
+          <div class="hero-image">
+            <img src="images/hero.jpg" alt="Beauty" />
+          </div>
+        </div>
+      </section>
+      <section id="about" class="about">
+        <div class="container about-content">
+          <div class="about-image">
+            <img src="images/about.jpg" alt="Про мене" />
+
+            <div class="experience">
+              <span>5+</span>
+              <p>років<br />досвіду</p>
+            </div>
+          </div>
+
+          <div class="about-text">
+            <span class="section-subtitle">ПРО МЕНЕ</span>
+
+            <h2>Привіт, я Анастасія</h2>
+
+            <p>
+              Я сертифікований beauty-майстер із любов'ю до своєї справи. Моє
+              головне завдання — підкреслити природну красу кожної клієнтки,
+              створюючи індивідуальний образ та комфортну атмосферу.
+            </p>
+
+            <div class="advantages">
+              <div class="advantage">
+                <h3>✓ Сертифікований майстер</h3>
+                <p>Постійно вдосконалюю навички та проходжу навчання.</p>
+              </div>
+
+              <div class="advantage">
+                <h3>✓ Преміум матеріали</h3>
+                <p>Використовую лише якісну професійну косметику.</p>
+              </div>
+
+              <div class="advantage">
+                <h3>✓ Індивідуальний підхід</h3>
+                <p>Підбираю рішення саме для ваших побажань.</p>
+              </div>
+            </div>
+
+            <a href="#" class="btn"> Дізнатися більше </a>
+          </div>
+        </div>
+      </section>
+      <section class="certificates">
+        <div class="container">
+          <span class="section-subtitle"> СЕРТИФІКАТИ </span>
+
+          <h2>Моя освіта та підвищення кваліфікації</h2>
+
+          <p class="section-description">
+            Постійно навчаюсь, проходжу майстер-класи та отримую нові
+            сертифікати, щоб пропонувати сучасні техніки та безпечні процедури.
+          </p>
+
+          <div class="swiper certificates-slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="images/certificate1.jpg" alt="Certificate" />
+              </div>
+
+              <div class="swiper-slide">
+                <img src="images/certificate2.jpg" alt="Certificate" />
+              </div>
+
+              <div class="swiper-slide">
+                <img src="images/certificate3.jpg" alt="Certificate" />
+              </div>
+
+              <div class="swiper-slide">
+                <img src="images/certificate4.jpg" alt="Certificate" />
+              </div>
+
+              <div class="swiper-slide">
+                <img src="images/certificate5.jpg" alt="Certificate" />
+              </div>
+            </div>
+
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+      <section id="services" class="services">
+        <div class="container">
+          <span class="section-subtitle"> ПОСЛУГИ </span>
+
+          <h2>Послуги, які підкреслять вашу красу</h2>
+
+          <p class="section-description">
+            Оберіть процедуру, яка допоможе вам виглядати ще більш впевнено та
+            доглянуто.
+          </p>
+
+          <div class="services-grid">
+            <div class="service-card">
+              <img src="images/service1.jpg" alt="Брови" />
+
+              <div class="service-info">
+                <h3>Оформлення брів</h3>
+
+                <p>
+                  Архітектура, фарбування та корекція брів відповідно до ваших
+                  рис обличчя.
+                </p>
+
+                <div class="service-bottom">
+                  <span>від 700 ₴</span>
+
+                  <a href="#" class="btn-small"> Записатися </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="service-card">
+              <img src="images/service2.jpg" alt="Вії" />
+
+              <div class="service-info">
+                <h3>Ламінування вій</h3>
+
+                <p>
+                  Природний вигин, блиск та доглянутий вигляд без щоденного
+                  макіяжу.
+                </p>
+
+                <div class="service-bottom">
+                  <span>від 900 ₴</span>
+
+                  <a href="#" class="btn-small"> Записатися </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="service-card">
+              <img src="images/service3.jpg" alt="Макіяж" />
+
+              <div class="service-info">
+                <h3>Професійне очищення шкіри</h3>
+
+                <p>
+                  Консультація, очищення та надання рекомендацій щодо
+                  повсякденного догляду.
+                </p>
+
+                <div class="service-bottom">
+                  <span>від 1200 ₴</span>
+
+                  <a href="#" class="btn-small"> Записатися </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="portfolio" class="portfolio">
+        <div class="container">
+          <span class="section-subtitle"> МОЇ РОБОТИ </span>
+
+          <h2>Результати, які говорять самі за себе</h2>
+
+          <p class="section-description">
+            Кожна процедура виконується індивідуально, з урахуванням ваших
+            побажань та особливостей зовнішності.
+          </p>
+
+          <div class="gallery">
+            <div class="gallery-item">
+              <img src="images/work1.jpg" alt="Робота 1" />
+            </div>
+
+            <div class="gallery-item">
+              <img src="images/work2.jpg" alt="Робота 2" />
+            </div>
+
+            <div class="gallery-item">
+              <img src="images/work3.jpg" alt="Робота 3" />
+            </div>
+
+            <div class="gallery-item">
+              <img src="images/work4.jpg" alt="Робота 4" />
+            </div>
+
+            <div class="gallery-item">
+              <img src="images/work5.jpg" alt="Робота 5" />
+            </div>
+
+            <div class="gallery-item">
+              <img src="images/work6.jpg" alt="Робота 6" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="pricing" class="pricing">
+        <div class="container">
+          <span class="section-subtitle"> ПРАЙС </span>
+
+          <h2>Вартість послуг</h2>
+
+          <p class="section-description">
+            Прозорі ціни без прихованих платежів. Остаточна вартість може
+            залежати від індивідуальних особливостей та обраної процедури.
+          </p>
+
+          <div class="price-card">
+            <div class="price-item">
+              <span>Архітектура брів</span>
+              <strong>700 ₴</strong>
+            </div>
+
+            <div class="price-item">
+              <span>Фарбування брів</span>
+              <strong>600 ₴</strong>
+            </div>
+
+            <div class="price-item">
+              <span>Ламінування вій</span>
+              <strong>900 ₴</strong>
+            </div>
+
+            <div class="price-item">
+              <span>Ламінування брів</span>
+              <strong>850 ₴</strong>
+            </div>
+
+            <div class="price-item">
+              <span>Перманентний макіяж</span>
+              <strong>2500 ₴</strong>
+            </div>
+
+            <div class="price-item">
+              <span>Консультація</span>
+              <strong>Безкоштовно</strong>
+            </div>
+
+            <div class="price-button">
+              <a href="#" class="btn"> Записатися на процедуру </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="reviews" class="reviews">
+        <div class="container">
+          <span class="section-subtitle"> ВІДГУКИ </span>
+
+          <h2>Що говорять мої клієнти</h2>
+
+          <p class="section-description">
+            Найкращий показник якості моєї роботи — довіра та щирі відгуки
+            клієнтів.
+          </p>
+
+          <div class="reviews-grid">
+            <div class="review-card">
+              <div class="review-stars">★★★★★</div>
+
+              <p class="review-text">
+                Дуже задоволена результатом! Майстер уважна до деталей,
+                атмосфера неймовірно затишна. Обов'язково повернуся ще.
+              </p>
+
+              <div class="review-author">
+                <img src="images/client1.jpg" alt="Клієнт" />
+
+                <div>
+                  <h4>Марія</h4>
+
+                  <span>Постійна клієнтка</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="review-card">
+              <div class="review-stars">★★★★★</div>
+
+              <p class="review-text">
+                Дуже професійний підхід. Процедура пройшла комфортно, а
+                результат навіть кращий, ніж я очікувала.
+              </p>
+
+              <div class="review-author">
+                <img src="images/client2.jpg" alt="Клієнт" />
+
+                <div>
+                  <h4>Олена</h4>
+
+                  <span>Клієнтка</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="review-card">
+              <div class="review-stars">★★★★★</div>
+
+              <p class="review-text">
+                Приємна атмосфера, сучасні матеріали та чудовий сервіс.
+                Однозначно рекомендую!
+              </p>
+
+              <div class="review-author">
+                <img src="images/client3.jpg" alt="Клієнт" />
+
+                <div>
+                  <h4>Катерина</h4>
+
+                  <span>Постійна клієнтка</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
-    <footer></footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+
+    <footer id="contacts">
+      <div class="container footer-content">
+        <div class="footer-about">
+          <h2>LUMIÈRE</h2>
+
+          <p>
+            Простір краси, де кожна деталь створена для вашого комфорту та
+            впевненості.
+          </p>
+
+          <div class="socials">
+            <a href="#">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a href="#">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+
+            <a href="#">
+              <i class="fa-brands fa-tiktok"></i>
+            </a>
+
+            <a href="#">
+              <i class="fa-brands fa-telegram"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-links">
+          <h3>Навігація</h3>
+
+          <a href="#about">Про мене</a>
+          <a href="#services">Послуги</a>
+          <a href="#portfolio">Мої роботи</a>
+          <a href="#pricing">Прайс</a>
+          <a href="#reviews">Відгуки</a>
+        </div>
+
+        <div class="footer-contact">
+          <h3>Контакти</h3>
+
+          <p>📍 Київ, Україна</p>
+
+          <p>📞 +38 (000) 000 00 00</p>
+
+          <p>✉ beauty@email.com</p>
+
+          <p>🕘 Пн–Сб 09:00–20:00</p>
+        </div>
+
+        <div class="footer-map">
+          <iframe
+            src="https://www.google.com/maps?q=Kyiv&output=embed"
+            loading="lazy"
+            allowfullscreen
+          >
+          </iframe>
+        </div>
+      </div>
+
+      <div class="copyright">© 2026 LUMIÈRE • Всі права захищені</div>
+    </footer>
   </body>
 </html>
