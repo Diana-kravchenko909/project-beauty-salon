@@ -5,11 +5,10 @@
 }
 
 body {
-  background: #fcf9f6;
+  background: #f8f4fc;
+  color: #3f3158;
 
   font-family: "Manrope", sans-serif;
-
-  color: #333;
 
   padding-top: 90px;
 }
@@ -33,13 +32,13 @@ html {
 
   width: 100%;
 
-  background: rgba(252, 249, 246, 0.95);
+  background: rgba(248, 244, 252, 0.95);
 
   backdrop-filter: blur(10px);
 
   z-index: 1000;
 
-  border-bottom: 1px solid #ece4df;
+  border-bottom: 1px solid #ddd2f2;
 }
 
 .header-container {
@@ -59,7 +58,7 @@ html {
 
   text-decoration: none;
 
-  color: #c89a83;
+  color: #8c6bc8;
 
   font-weight: 700;
 }
@@ -75,7 +74,7 @@ html {
 .navbar a {
   text-decoration: none;
 
-  color: #444;
+  color:  color:#56496C;
 
   font-weight: 500;
 
@@ -85,8 +84,8 @@ html {
 }
 
 .navbar a:hover {
-  color: #c89a83;
-}
+  color:#8C6BC8;
+}#c
 
 .navbar a::after {
   content: "";
@@ -111,9 +110,9 @@ html {
 }
 
 .btn {
-  background: #c89a83;
+   background:#B69AD9;
 
-  color: white;
+    color:white;
 
   padding: 15px 34px;
 
@@ -125,7 +124,7 @@ html {
 }
 
 .btn:hover {
-  background: #b6846b;
+  background:#8C6BC8;
 }
 
 .hero {
@@ -157,11 +156,15 @@ html {
 .subtitle {
   letter-spacing: 3px;
 
-  color: #b88974;
-
   font-size: 13px;
 }
 
+.subtitle,
+.section-subtitle{
+
+    color:#A789D4;
+
+}
 .hero h1 {
   font-family: "Cormorant Garamond", serif;
 
@@ -191,10 +194,8 @@ html {
 }
 
 .btn-outline {
-  border: 1px solid #c89a83;
-
-  color: #c89a83;
-
+  border: 1px solid #B69AD9;
+    color:#8C6BC8;
   padding: 15px 34px;
 
   border-radius: 40px;
@@ -204,10 +205,12 @@ html {
   transition: 0.3s;
 }
 
-.btn-outline:hover {
-  background: #c89a83;
+.btn-outline:hover{
 
-  color: white;
+    background:#B69AD9;
+
+    color:white;
+
 }
 
 .hero-image {
@@ -345,8 +348,8 @@ html {
 .advantage {
   padding: 25px;
 
-  background: #fff;
-
+ background:#FCFAFF;
+border:1px solid #EEE5FA;
   border-radius: 20px;
 
   transition: 0.3s;
@@ -355,7 +358,7 @@ html {
 .advantage:hover {
   transform: translateY(-5px);
 
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+  box-shadow:0 20px 40px rgba(125,95,180,.15);
 }
 
 .advantage h3 {
@@ -618,7 +621,7 @@ html {
 }
 
 .price-item strong {
-  color: #c89a83;
+    color:#8C6BC8;
 
   font-size: 22px;
 
@@ -665,7 +668,7 @@ html {
 }
 
 .review-stars {
-  color: #d9a441;
+  color:#B69AD9;
 
   font-size: 22px;
 
@@ -710,7 +713,7 @@ html {
 /* FOOTER */
 
 footer {
-  background: #f8f3ef;
+     background:#EEE5FA;
 
   padding-top: 90px;
 
@@ -764,7 +767,7 @@ footer {
 
   text-decoration: none;
 
-  color: #c89a83;
+   color:#8C6BC8;
 
   font-size: 20px;
 
@@ -774,9 +777,10 @@ footer {
 }
 
 .socials a:hover {
-  background: #c89a83;
+   background:#8C6BC8;
 
-  color: white;
+    color:white;
+
 
   transform: translateY(-5px);
 }
